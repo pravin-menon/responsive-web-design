@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Treble With Pleasure - Online Music Classes - FCC</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<style>
+		header {
+		  display: flex;
+		  flex-direction: row;
+		  align-items: center;
+		  justify-content: center;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  z-index: 1;
+		  width: 100%
+		}
+
+		.center {
+		  text-align: center;
+		}
+
+		.img-dim {
+		  height: 90px;
+		  width: 150px;
+		  border-radius: 20%;
+		}
+
+		h2 {
+		  font-family: Lobster, monospace;
+		}
+
+		header h2, header h3 {
+			display: flex;
+			margin: 0;
+		}
+
+		body{
+		  margin-left: 3%;
+		  margin-right: 3%;
+		  font-family: monospace;
+		  font-size: 15px;
+		  background-color: #003236;
+		  background-image: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
+		  background-repeat: repeat;
+		  scroll-padding-top: 70px;
+		}
+
+		.div-center {
+		  margin: auto;
+		  width: 50%;
+		  padding: 10px;
+		}
+
+		.company-name {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 10px;
+			padding: 10px;
+		}
+
+		.navbar {
+		  width: 100%;
+		  background-color: #eeaaaa;
+		  padding: 5px;
+		}
+
+		li {
+		  display: inline;
+		  border-right: 1px solid #eee;
+		}
+
+		li a:hover {
+		  background: #aaeeee;
+		  color: black;
+		}
+
+		.nav-link {
+		  padding: 15px;
+		}
+
+		.contact-us {
+		  display: block;
+		  align-items: center;
+		}
+
+		main {
+		  margin-top: 80px; /* Add a top margin to avoid content overlay */
+		}
+
+		@media screen and (max-width: 480px) {
+		  body {
+			background-color: lightgreen;
+		  }
+		}
+
+		footer {
+		  display: flex;
+		  flex-direction: column;
+		  background-color: grey;
+		  padding: 10px;
+		  text-align: right;
+		}
+	</style>
+  </head>
+  <body>
+    <header id="header" class="center">
+      <img id="header-img" class="img-dim" src="https://cdn.pixabay.com/photo/2016/03/06/05/03/piano-1239729_1280.jpg">
+      <div class="company-name"><h2>Treble With Pleasure</h2>
+        <h3>Online Music Classes</h3>
+      </div>
+      <div><nav id="nav-bar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="#demo">Demo</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      <br><hr><br>
+      <div id="demo" class="div-center">
+        <iframe id="video" width="420" height="315"
+src="https://www.youtube.com/embed/cgwtvcgTP7Q?autoplay=0">
+</iframe>
+      </div>
+      <br><hr><br>
+      <div id="contact" class="contact-us div-center">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+        <p>Provide your Email ID and we'll reach out to you soon!</p>
+        <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+        <input id="submit" type="submit">
+      </form>
+      </div>
+      <br><hr><br>
+      <div id="about" class="div-center">
+        <p>We are a group of music aficionados who are keen on spreading the message of love through our music. Music is a language that knows no barriers.Come be a part of our journey.</p>
+      </div>
+	  <br><hr><br>
+    </main>
+    <footer>
+      <nav>
+      <a class="nav-link" href="#">Privacy</a>
+      <a class="nav-link" href="#">Terms</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <p>(c) Copyright 2020, Treble With Pleasure</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Online Education Survey-FCC</title>
+	<style>
+		body {
+		  background-color: #cccccc;
+		  margin-left: 5%;
+		  margin-right: 5%;
+		}
+
+		.text-center {
+		  text-align: center;
+		}
+
+		.form-content {
+		  margin: auto;
+		  display: inline-block;
+		  font-family: monospace;
+		  font-size: 14px;
+		}
+
+		.img-content {
+		  overflow: auto;
+		  position: fixed;
+		  background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2018%2F03%2F12215217%2Fshutterstock_568403398.jpg');
+		  -webkit-background-size: cover;
+		  background-size:cover;
+		  background-position: center center;
+		  height: 100%;
+		  width: 100%;
+		  left: 0;
+		  right: 0;
+		  z-index: -1;
+		  -webkit-filter: blur(3px);
+		  filter: blur(5px);
+		}
+	</style>
+  </head>
+  <body>
+    <div class="img-content"></div>
+    <h1 id="title" class="text-center">Online Education Survey Form</h1>
+    <p id="description" class="text-center">We are an NGO working with the Ministry of Education to understand the effectiveness of online education. Please help us by filling this survey.</p>
+    <div class="form-content">
+		<form id="survey-form" action="/submit-survey">
+			<fieldset>
+				<label for="name" id="name-label">Name: </label>
+				<input id="name" type="text" placeholder="Enter Name" required><br><br>
+				<label for="email" id="email-label">Email: </label>
+				<input id="email" type="email" placeholder="Enter e-mail ID" required><br><br>
+				<label for="number" id="number-label">Age: </label>
+				<input id="number" type="number" placeholder="Enter Age (between 1 and 99)" min="1" max="99"><br><br>
+				<p>Which grade is your kid in?</p>
+				<label for="1to4"><input id="1to4" type="radio" name="grade" value="1to4" checked> Grades 1 to 4</label><br>
+				<label for="5to7"><input id="5to7" type="radio" name="grade" value="5to7"> Grade 5 to 7</label><br>
+				<label for="8to10"><input id="8to10" type="radio" name="grade" value="8to10"> Grade 8 to 10</label><br><br>
+				<label id="frequency" for="frequency">What is the frequency of the online classes?</label><br>
+				<select id="dropdown" name="dropdown" placeholder="Select one">
+					<option value="none">Select one</option>
+					<option value="one">Once a week</option>
+					<option value="three">Thrice a week</option>
+					<option value="five">5 days a week</option>
+				</select><br><br>
+				<p>How effective are the sessions?</p>
+				<label for="poor"><input id="poor" type="radio" name="effectiveness" value="poor"> Poor</label><br>
+				<label for="average"><input id="average" type="radio" name="effectiveness" value="average"> Average</label><br>
+				<label for="good"><input id="good" type="radio" name="effectiveness" value="good" checked> Good</label><br>
+				<label for="excellent"><input id="excellent" type="radio" name="effectiveness" value="excellent"> Excellent</label><br><br>
+				<p>According to you, what should be the frequency of the classes?</p>
+				<label for="once"><input id="once" type="checkbox" name="frequency" value="once"> Once a week</label><br>
+				<label for="thrice"><input id="thrice" type="checkbox" name="frequency" value="thrice"> Thrice a week</label><br>
+				<label for="five"><input id="five" type="checkbox" name="frequency" value="five"> 5 days a week</label><br>
+				<label for="four"><input id="seven" type="checkbox" name="frequency" value="four"> 4 hours a day</label><br>
+				<label for="seven"><input id="four" type="checkbox" name="frequency" value="seven"> 7 hours a day</label><br><br>
+				<label id=" textarea-label" for="textarea">Additional Comments:</label><br>
+				<textarea id="textarea" name="comments" rows="5" columns="80"></textarea><br><br>
+				<button id="submit" type="submit">Submit</button><br><br>
+			</fieldset>
+		</form>
+    </div>
+  </body>
+</html>
